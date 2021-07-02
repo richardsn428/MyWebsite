@@ -6,12 +6,6 @@ body{
     margin:0;
 }
 
-.container {
-    margin:auto;
-    width:90%;
-    overflow:hidden;
-}
-
 #main-header {
     padding: 8px;
     text-align: center;
@@ -19,9 +13,17 @@ body{
     color: #fff;
 }
 
+.nav-container {
+    margin:auto;
+    width:90%;
+    overflow:hidden;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
 #navbar {
     background-color: #222;
-    color: #fff;
 }
 
 #navbar ul{
@@ -34,14 +36,28 @@ body{
 }
 
 #navbar li:hover {
-    background: #444;
+    background-color: #aaa;
 }
 
 #navbar a{
-    color: #fff;
+    color: #aaa;
     text-decoration: none;
     font-size: 18px;
-    padding-right: 30px;
+    padding: 14px 16px;
+}
+
+.section-area {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #1c1c1c;
+    margin: 0px;
+    padding: 20px;
+}
+
+.section-area a:visited{
+    text-decoration: none;
+    color: #fff;
 }
 
 .section-box {
@@ -57,14 +73,6 @@ body{
 
 .boxHeading {
     text-align: center;
-}
-
-.section-area {
-    padding: 50px;
-    background-color: #1c1c1c;
-    margin: 0;
-    padding: 20px;
-    height: 300px;
 }
 
 #main-footer{
