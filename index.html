@@ -14,16 +14,16 @@
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <a href="#"><label class="logo">Nick Richards</label></a>
+            <a href="pages/about.html"><label class="logo">Nick Richards</label></a>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Wildlife</a></li>
-                <li><a href="#">Astrophotography</a></li>
-                <li><a href="#">Landscapes</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/Wildlife.html">Wildlife</a></li>
+                <li><a href="pages/Astrophotography.html">Astrophotography</a></li>
+                <li><a href="pages/landscapes.html">Landscapes</a></li>
+                <li><a href="pages/events.html">Events</a></li>
+                <li><a href="pages/video.html">Video</a></li>
+                <li><a href="pages/about.html">About</a></li>
             </ul>
         </nav>
 
@@ -32,7 +32,7 @@
                 <div class="slider">
                     <div class="slides">
                         <!-- radio buttons-->
-                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio1" checked>
                         <input type="radio" name="radio-btn" id="radio2">
                         <input type="radio" name="radio-btn" id="radio3">
                         <input type="radio" name="radio-btn" id="radio4">
@@ -96,64 +96,73 @@
                     </div>
                 </div>
                 <script type="text/javascript">
-                    var counter = 1;
+                    var counter = 2;
+                    var j = 1;
                     setInterval(function(){
-                        document.getElementById('radio' + counter).checked = true;
+                            // Loop through all radio buttons
+                            for (let i = 1; i <= 6; i++) {
+                                if (document.getElementById('radio' + i).checked) {
+                                    counter = i;
+                                    break;
+                                }
+                            }
+                            
                         counter++;
                         if(counter > 6){
                             counter = 1;
                         }
+                        document.getElementById('radio' + counter).checked = true;
                     }, 8000);
                 </script>
             </div>
 
             <h1 class="galleries-section-title">Galleries</h1>
-            <div class="galleries-section">
-                <a href="" class="galleries-card">
+            <div class="home-galleries-section">
+                <a href="pages/wildlife.html" class="home-galleries-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
-                    <div class="galleries-card-title">Wildlife</div>
+                    <div class="home-galleries-card-title">Wildlife</div>
                 </a>
-                <a href="" class="galleries-card">
+                <a href="pages/astrophotography.html" class="home-galleries-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
-                    <div class="galleries-card-title">Astrophotography</div>
+                    <div class="home-galleries-card-title">Astrophotography</div>
                 </a>
-                <a href="" class="galleries-card">
+                <a href="pages/landscapes.html" class="home-galleries-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
-                    <div class="galleries-card-title">Landscapes</div>
+                    <div class="home-galleries-card-title">Landscapes</div>
                 </a>
-                <a href="" class="galleries-card">
+                <a href="pages/events.html" class="home-galleries-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
-                    <div class="galleries-card-title">Events</div>
+                    <div class="home-galleries-card-title">Events</div>
                 </a>
-                <a href="" class="galleries-card">
+                <a href="pages/video.html" class="home-galleries-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
-                    <div class="galleries-card-title">Video</div>
+                    <div class="home-galleries-card-title">Video</div>
                 </a>
             </div>
 
             <h1 id="blog-section-title">Recent Blog Posts</h1>
             <div class="blogs-section">
                 <div class="blog-card">
-                    <a href="#"><img src="img/moon_lowres.jpg" alt="" style="width: 100%;"></a>
+                    <a href="pages/blogs/rathlin2023.html"><img src="img/blogs/Rathlin-stacks.jpg" alt="the sea stacks at Rathlin" style="width: 100%;"></a>
                     <div class="blog-card-desc">
-                        <h3 class="blog-card-title">Rathlin</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-                        <p><a href="#">Read more →</a></p>
+                        <h3 class="blog-card-title">Rathlin 2023</h3>
+                        <p>Talking about our time at RSPB Rathlin Island during the summer of 2023</p>
+                        <p><a href="pages/blogs/rathlin2023.html">Read more →</a></p>
                     </div>
                 </div>
                 <div class="blog-card">
                     <img src="img/moon_lowres.jpg" alt="" style="width: 100%;">
                     <div class="blog-card-desc">
-                        <h3 class="blog-card-title">Rathlin</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+                        <h3 class="blog-card-title">Coming Soon</h3>
+                        <p>In the process of beign written</p>
                         <p><a href="#">Read more →</a></p>
                     </div>
                 </div>
                 <div class="blog-card">
                     <img src="img/IMG_1850.jpg" alt="" style="width: 100%;">
                     <div class="blog-card-desc">
-                        <h3 class="blog-card-title">Rathlin</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+                        <h3 class="blog-card-title">Coming Soon...</h3>
+                        <p>In the process of beign written</p>
                         <p><a href="#">Read more →</a></p>
                     </div>
                 </div>
