@@ -666,6 +666,16 @@ nav ul li a.active, nav ul li a:hover {
     height: 100%;
 }
 
+.main-vid video {
+    align-items: center;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/9;
+    box-shadow: 0 1em 3rem -0.75rem hsla(0, 0%, 0%, 0.3);
+    margin:0 10% 20px 10%;
+    height: 100%;
+}
+
 /* Footer */
 
 #main-footer{
