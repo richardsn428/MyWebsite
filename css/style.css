@@ -654,6 +654,10 @@ nav ul li a.active, nav ul li a:hover {
 .blog-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.blog-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
   
 /* Add some padding inside the card container */
 .blog-card-desc {
