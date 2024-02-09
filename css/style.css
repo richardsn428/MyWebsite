@@ -611,6 +611,7 @@ nav ul li a.active, nav ul li a:hover {
 
 .blog-card-title {
     padding-bottom: 0.5em;
+    padding-top: 0.3em;
 }
 
 #blog-section-title {
