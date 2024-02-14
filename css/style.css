@@ -615,6 +615,14 @@ nav ul li a.active, nav ul li a:hover {
     color: #000;
 }
 
+.blog-card-title a{
+    color: rgb(71, 71, 71);
+}
+
+.blog-card-title a:visited{
+    color: rgb(71, 71, 71);
+}
+
 #blog-section-title {
     text-align: center;
     color: #000;
@@ -649,6 +657,10 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .blog-button a:visited {
+    color: rgb(71, 71, 71);
+}
+
+.blog-button a{
     color: rgb(71, 71, 71);
 }
 
