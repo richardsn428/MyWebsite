@@ -649,7 +649,7 @@ nav ul li a.active, nav ul li a:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    color: #000;
+    color: rgb(71, 71, 71);
     padding: 8px;
     padding-top: 12px;
     padding-bottom: 5px;
@@ -657,6 +657,14 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .blog-button a:visited {
+    color: rgb(71, 71, 71);
+}
+
+.blog-card-title a:visited {
+    color: rgb(71, 71, 71);
+}
+
+.blog-card-title a {
     color: rgb(71, 71, 71);
 }
 
