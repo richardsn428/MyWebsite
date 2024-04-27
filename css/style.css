@@ -577,14 +577,14 @@ nav ul li a.active, nav ul li a:hover {
 
 .blogs-section {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 40px;
     padding-bottom: 60px;
     color: #000;
-    gap: 5%;
+    gap: 40px;
 }
 
 @media (max-width: 1000px) {
